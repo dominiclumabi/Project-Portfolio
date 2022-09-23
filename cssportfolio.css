@@ -85,6 +85,12 @@ a {
     color: gray;
 }
 
+#doms {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 #dominic {
     padding: 50px 10px 50px 10px;
     padding:0;
@@ -108,6 +114,7 @@ a {
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: black;
+    font-size: 25px;
 }
 
 #navlink:hover {
@@ -187,6 +194,10 @@ nav {
 @media (min-width: 576px) {
     #navigation {
         display: flex !important;
+    }
+
+    #graduate {
+        width: 60%;
     }
 }
 
