@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Javascript Calculator</title>
+</head>
+
+<body>
+
+  <div class="form" style="border: 1px solid black; text-align: center;">
+    
+        <form name = "form1">
+          <!-- INPUT BOX -->
+          
+          <input class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3" id = "calc" type ="text" name = "answer" placeholder="0" style="text-align: right; width: 100%; height: auto; background-color: #343a40; color: white;">
+          
+        <div class="">
+          <!--Row1-->
+          <div class="row-3 row-sm-3 row-md-3 row-lg-3 row-xl-3 row-xxl-3" id="row1" style="width: 100%; height: 100%;">
+            <input type = "button" value = "AC" onclick = "form1.answer.value = ' ' " id= "clear" style="width: 23%; background-color: #343a40; color: white;" >
+            <input type = "button" value = "+/-" onclick = "form1.answer.value = '+/-' " id= "clear" style="width: 23%; background-color: #343a40; color: white;">
+            <input type = "button" value = "%" onclick = "form1.answer.value += '%' " style="width: 23%; background-color: #343a40; color: white;">
+            <input type = "button" value = "/" onclick = "form1.answer.value += '/' " style="width: 23%; background-color: goldenrod; color: white;">
+          </div>
+
+          <!--Row2-->
+          <div class="row-3" id="row2">
+            <input type = "button" value = "7" onclick = "form1.answer.value += '7' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "8" onclick = "form1.answer.value += '8' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "9" onclick = "form1.answer.value += '9' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "*" onclick = "form1.answer.value += '*' " style="width: 23%; background-color: goldenrod; color: white;">
+          </div>
+          
+          <!--Row3-->
+          <div class="row-3" id="row3">
+            <input type = "button" value = "4" onclick = "form1.answer.value += '4' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "5" onclick = "form1.answer.value += '5' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "6" onclick = "form1.answer.value += '6' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "-" onclick = "form1.answer.value += '-' " style="width: 23%; background-color: goldenrod; color: white;">
+          </div>
+          
+        
+          <!--Row4-->
+          <div class="row-3" id="row4">
+            <input type = "button" value = "1" onclick = "form1.answer.value += '1' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "2" onclick = "form1.answer.value += '2' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "3" onclick = "form1.answer.value += '3' " style="width: 23%; background-color: darkgray; color: white;">
+            <input type = "button" value = "+" onclick = "form1.answer.value += '+' " style="width: 23%; background-color: goldenrod; color: white;">
+          </div>
+            
+          <!--Row5-->
+          <div class="row-3" id="row5">
+            <input type = "button" value = "0" onclick = "form1.answer.value += '0' " style="width: 47.3%; background-color: darkgray; color: white;">
+            <input type = "button" value = "." onclick = "form1.answer.value += '.' " style="width: 23.1%; background-color: darkgray; color: white;">
+            <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) " style="width: 23%; background-color: goldenrod; color: white;">
+          </div>
+       </form>
+    </div>
+  </div>
+
+
+  <script></script> 
+
+</body>
+</html>
